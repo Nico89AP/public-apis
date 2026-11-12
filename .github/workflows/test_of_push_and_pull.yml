@@ -1,10 +1,10 @@
 name: "Tests of push & pull"
 
+# Paused by request on 2026-11-12. Revert this commit to restore original triggers.
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - '__pause_all_projects_do_not_create__'
 
 env:
   FILENAME: README.md
